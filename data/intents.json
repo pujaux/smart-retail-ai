@@ -1,0 +1,44 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good evening"],
+      "responses": ["Hello! Welcome to our store. How can I help you today?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "thanks bye"],
+      "responses": ["Thank you for visiting! Have a great day."]
+    },
+    {
+      "tag": "product_availability",
+      "patterns": ["is this in stock", "do you have this product", "is it available", "stock check"],
+      "responses": ["Let me check that for you. Could you share the product name or code?"]
+    },
+    {
+      "tag": "order_status",
+      "patterns": ["where is my order", "track my order", "order status", "when will my order arrive"],
+      "responses": ["Please share your order ID and I'll check the status for you."]
+    },
+    {
+      "tag": "return_policy",
+      "patterns": ["what is your return policy", "can I return this", "how do I get a refund"],
+      "responses": ["You can return any item within 30 days of purchase for a full refund."]
+    },
+    {
+      "tag": "payment",
+      "patterns": ["what payment methods do you accept", "can I pay with card", "do you accept upi"],
+      "responses": ["We accept credit/debit cards, UPI, net banking, and cash on delivery."]
+    },
+    {
+      "tag": "discount",
+      "patterns": ["any discounts available", "do you have offers", "is there a sale"],
+      "responses": ["Yes! Check our current offers section for the latest discounts."]
+    },
+    {
+      "tag": "human_agent",
+      "patterns": ["talk to a human", "connect me to an agent", "I need help from a person"],
+      "responses": ["Connecting you to a human agent, please hold on."]
+    }
+  ]
+}
