@@ -1,31 +1,601 @@
 review,sentiment
-This product is amazing and works perfectly,positive
-I love how easy it is to use,positive
-Great quality for the price,positive
-Excellent service and fast delivery,positive
-Best purchase I have made this year,positive
-Highly recommend this to everyone,positive
-The quality exceeded my expectations,positive
-Very satisfied with my order,positive
-"Fantastic product, will buy again",positive
-"Works exactly as described, very happy",positive
-"Terrible quality, broke after one day",negative
-Very disappointed with this purchase,negative
-"Waste of money, do not buy",negative
-Poor customer service experience,negative
-The product arrived damaged,negative
-Not worth the price at all,negative
-I regret buying this item,negative
-"Completely useless, does not work",negative
-Worst product I have ever bought,negative
-"Awful experience, would not recommend",negative
-"It is okay, nothing special",neutral
-The product works as expected,neutral
-"Average quality, could be better",neutral
-"Delivery was on time, product is fine",neutral
-"Not bad, but not great either",neutral
-It does what it says,neutral
-"Standard product, meets basic needs",neutral
-Decent for the price,neutral
-Nothing to complain about,neutral
-Acceptable quality overall,neutral
+"I absolutely love the shoes, works perfectly every time.",positive
+"the shoes exceeded my expectations, great quality overall.",positive
+"Very happy with the shoes, would definitely buy again.",positive
+the shoes arrived quickly and works exactly as described.,positive
+"Excellent value for money, the shoes is fantastic.",positive
+Highly recommend the shoes to anyone looking for quality.,positive
+"the shoes is amazing, best purchase I made this year.",positive
+"Superb build quality on the shoes, very satisfied customer.",positive
+"the shoes works flawlessly, customer service was great too.",positive
+"Five stars for the shoes, could not be happier.",positive
+"the shoes broke after just two days, very disappointed.",negative
+"Terrible quality, the shoes stopped working almost immediately.",negative
+"I regret buying the shoes, complete waste of money.",negative
+the shoes arrived damaged and customer support was unhelpful.,negative
+"Would not recommend the shoes, poor build quality.",negative
+"the shoes does not work as advertised, very frustrating.",negative
+"Worst purchase ever, the shoes is completely useless.",negative
+the shoes was defective right out of the box.,negative
+"Very poor experience, the shoes feels cheaply made.",negative
+"Disappointed with the shoes, does not match the description.",negative
+"the shoes is okay, nothing particularly special about it.",neutral
+"the shoes works as expected, average quality for the price.",neutral
+"It's fine, the shoes does the basic job it's meant for.",neutral
+"the shoes arrived on time, quality is acceptable.",neutral
+"Not bad, not great, the shoes is just an average product.",neutral
+"the shoes meets basic requirements, nothing more.",neutral
+"Decent purchase, the shoes works but nothing stands out.",neutral
+"the shoes is standard, does what it says on the box.",neutral
+"Acceptable quality for the shoes, no major complaints.",neutral
+"the shoes is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love this laptop, works perfectly every time.",positive
+"this laptop exceeded my expectations, great quality overall.",positive
+"Very happy with this laptop, would definitely buy again.",positive
+this laptop arrived quickly and works exactly as described.,positive
+"Excellent value for money, this laptop is fantastic.",positive
+Highly recommend this laptop to anyone looking for quality.,positive
+"this laptop is amazing, best purchase I made this year.",positive
+"Superb build quality on this laptop, very satisfied customer.",positive
+"this laptop works flawlessly, customer service was great too.",positive
+"Five stars for this laptop, could not be happier.",positive
+"this laptop broke after just two days, very disappointed.",negative
+"Terrible quality, this laptop stopped working almost immediately.",negative
+"I regret buying this laptop, complete waste of money.",negative
+this laptop arrived damaged and customer support was unhelpful.,negative
+"Would not recommend this laptop, poor build quality.",negative
+"this laptop does not work as advertised, very frustrating.",negative
+"Worst purchase ever, this laptop is completely useless.",negative
+this laptop was defective right out of the box.,negative
+"Very poor experience, this laptop feels cheaply made.",negative
+"Disappointed with this laptop, does not match the description.",negative
+"this laptop is okay, nothing particularly special about it.",neutral
+"this laptop works as expected, average quality for the price.",neutral
+"It's fine, this laptop does the basic job it's meant for.",neutral
+"this laptop arrived on time, quality is acceptable.",neutral
+"Not bad, not great, this laptop is just an average product.",neutral
+"this laptop meets basic requirements, nothing more.",neutral
+"Decent purchase, this laptop works but nothing stands out.",neutral
+"this laptop is standard, does what it says on the box.",neutral
+"Acceptable quality for this laptop, no major complaints.",neutral
+"this laptop is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love the headphones, works perfectly every time.",positive
+"the headphones exceeded my expectations, great quality overall.",positive
+"Very happy with the headphones, would definitely buy again.",positive
+the headphones arrived quickly and works exactly as described.,positive
+"Excellent value for money, the headphones is fantastic.",positive
+Highly recommend the headphones to anyone looking for quality.,positive
+"the headphones is amazing, best purchase I made this year.",positive
+"Superb build quality on the headphones, very satisfied customer.",positive
+"the headphones works flawlessly, customer service was great too.",positive
+"Five stars for the headphones, could not be happier.",positive
+"the headphones broke after just two days, very disappointed.",negative
+"Terrible quality, the headphones stopped working almost immediately.",negative
+"I regret buying the headphones, complete waste of money.",negative
+the headphones arrived damaged and customer support was unhelpful.,negative
+"Would not recommend the headphones, poor build quality.",negative
+"the headphones does not work as advertised, very frustrating.",negative
+"Worst purchase ever, the headphones is completely useless.",negative
+the headphones was defective right out of the box.,negative
+"Very poor experience, the headphones feels cheaply made.",negative
+"Disappointed with the headphones, does not match the description.",negative
+"the headphones is okay, nothing particularly special about it.",neutral
+"the headphones works as expected, average quality for the price.",neutral
+"It's fine, the headphones does the basic job it's meant for.",neutral
+"the headphones arrived on time, quality is acceptable.",neutral
+"Not bad, not great, the headphones is just an average product.",neutral
+"the headphones meets basic requirements, nothing more.",neutral
+"Decent purchase, the headphones works but nothing stands out.",neutral
+"the headphones is standard, does what it says on the box.",neutral
+"Acceptable quality for the headphones, no major complaints.",neutral
+"the headphones is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love this jacket, works perfectly every time.",positive
+"this jacket exceeded my expectations, great quality overall.",positive
+"Very happy with this jacket, would definitely buy again.",positive
+this jacket arrived quickly and works exactly as described.,positive
+"Excellent value for money, this jacket is fantastic.",positive
+Highly recommend this jacket to anyone looking for quality.,positive
+"this jacket is amazing, best purchase I made this year.",positive
+"Superb build quality on this jacket, very satisfied customer.",positive
+"this jacket works flawlessly, customer service was great too.",positive
+"Five stars for this jacket, could not be happier.",positive
+"this jacket broke after just two days, very disappointed.",negative
+"Terrible quality, this jacket stopped working almost immediately.",negative
+"I regret buying this jacket, complete waste of money.",negative
+this jacket arrived damaged and customer support was unhelpful.,negative
+"Would not recommend this jacket, poor build quality.",negative
+"this jacket does not work as advertised, very frustrating.",negative
+"Worst purchase ever, this jacket is completely useless.",negative
+this jacket was defective right out of the box.,negative
+"Very poor experience, this jacket feels cheaply made.",negative
+"Disappointed with this jacket, does not match the description.",negative
+"this jacket is okay, nothing particularly special about it.",neutral
+"this jacket works as expected, average quality for the price.",neutral
+"It's fine, this jacket does the basic job it's meant for.",neutral
+"this jacket arrived on time, quality is acceptable.",neutral
+"Not bad, not great, this jacket is just an average product.",neutral
+"this jacket meets basic requirements, nothing more.",neutral
+"Decent purchase, this jacket works but nothing stands out.",neutral
+"this jacket is standard, does what it says on the box.",neutral
+"Acceptable quality for this jacket, no major complaints.",neutral
+"this jacket is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love the phone case, works perfectly every time.",positive
+"the phone case exceeded my expectations, great quality overall.",positive
+"Very happy with the phone case, would definitely buy again.",positive
+the phone case arrived quickly and works exactly as described.,positive
+"Excellent value for money, the phone case is fantastic.",positive
+Highly recommend the phone case to anyone looking for quality.,positive
+"the phone case is amazing, best purchase I made this year.",positive
+"Superb build quality on the phone case, very satisfied customer.",positive
+"the phone case works flawlessly, customer service was great too.",positive
+"Five stars for the phone case, could not be happier.",positive
+"the phone case broke after just two days, very disappointed.",negative
+"Terrible quality, the phone case stopped working almost immediately.",negative
+"I regret buying the phone case, complete waste of money.",negative
+the phone case arrived damaged and customer support was unhelpful.,negative
+"Would not recommend the phone case, poor build quality.",negative
+"the phone case does not work as advertised, very frustrating.",negative
+"Worst purchase ever, the phone case is completely useless.",negative
+the phone case was defective right out of the box.,negative
+"Very poor experience, the phone case feels cheaply made.",negative
+"Disappointed with the phone case, does not match the description.",negative
+"the phone case is okay, nothing particularly special about it.",neutral
+"the phone case works as expected, average quality for the price.",neutral
+"It's fine, the phone case does the basic job it's meant for.",neutral
+"the phone case arrived on time, quality is acceptable.",neutral
+"Not bad, not great, the phone case is just an average product.",neutral
+"the phone case meets basic requirements, nothing more.",neutral
+"Decent purchase, the phone case works but nothing stands out.",neutral
+"the phone case is standard, does what it says on the box.",neutral
+"Acceptable quality for the phone case, no major complaints.",neutral
+"the phone case is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love this backpack, works perfectly every time.",positive
+"this backpack exceeded my expectations, great quality overall.",positive
+"Very happy with this backpack, would definitely buy again.",positive
+this backpack arrived quickly and works exactly as described.,positive
+"Excellent value for money, this backpack is fantastic.",positive
+Highly recommend this backpack to anyone looking for quality.,positive
+"this backpack is amazing, best purchase I made this year.",positive
+"Superb build quality on this backpack, very satisfied customer.",positive
+"this backpack works flawlessly, customer service was great too.",positive
+"Five stars for this backpack, could not be happier.",positive
+"this backpack broke after just two days, very disappointed.",negative
+"Terrible quality, this backpack stopped working almost immediately.",negative
+"I regret buying this backpack, complete waste of money.",negative
+this backpack arrived damaged and customer support was unhelpful.,negative
+"Would not recommend this backpack, poor build quality.",negative
+"this backpack does not work as advertised, very frustrating.",negative
+"Worst purchase ever, this backpack is completely useless.",negative
+this backpack was defective right out of the box.,negative
+"Very poor experience, this backpack feels cheaply made.",negative
+"Disappointed with this backpack, does not match the description.",negative
+"this backpack is okay, nothing particularly special about it.",neutral
+"this backpack works as expected, average quality for the price.",neutral
+"It's fine, this backpack does the basic job it's meant for.",neutral
+"this backpack arrived on time, quality is acceptable.",neutral
+"Not bad, not great, this backpack is just an average product.",neutral
+"this backpack meets basic requirements, nothing more.",neutral
+"Decent purchase, this backpack works but nothing stands out.",neutral
+"this backpack is standard, does what it says on the box.",neutral
+"Acceptable quality for this backpack, no major complaints.",neutral
+"this backpack is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love the watch, works perfectly every time.",positive
+"the watch exceeded my expectations, great quality overall.",positive
+"Very happy with the watch, would definitely buy again.",positive
+the watch arrived quickly and works exactly as described.,positive
+"Excellent value for money, the watch is fantastic.",positive
+Highly recommend the watch to anyone looking for quality.,positive
+"the watch is amazing, best purchase I made this year.",positive
+"Superb build quality on the watch, very satisfied customer.",positive
+"the watch works flawlessly, customer service was great too.",positive
+"Five stars for the watch, could not be happier.",positive
+"the watch broke after just two days, very disappointed.",negative
+"Terrible quality, the watch stopped working almost immediately.",negative
+"I regret buying the watch, complete waste of money.",negative
+the watch arrived damaged and customer support was unhelpful.,negative
+"Would not recommend the watch, poor build quality.",negative
+"the watch does not work as advertised, very frustrating.",negative
+"Worst purchase ever, the watch is completely useless.",negative
+the watch was defective right out of the box.,negative
+"Very poor experience, the watch feels cheaply made.",negative
+"Disappointed with the watch, does not match the description.",negative
+"the watch is okay, nothing particularly special about it.",neutral
+"the watch works as expected, average quality for the price.",neutral
+"It's fine, the watch does the basic job it's meant for.",neutral
+"the watch arrived on time, quality is acceptable.",neutral
+"Not bad, not great, the watch is just an average product.",neutral
+"the watch meets basic requirements, nothing more.",neutral
+"Decent purchase, the watch works but nothing stands out.",neutral
+"the watch is standard, does what it says on the box.",neutral
+"Acceptable quality for the watch, no major complaints.",neutral
+"the watch is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love this blender, works perfectly every time.",positive
+"this blender exceeded my expectations, great quality overall.",positive
+"Very happy with this blender, would definitely buy again.",positive
+this blender arrived quickly and works exactly as described.,positive
+"Excellent value for money, this blender is fantastic.",positive
+Highly recommend this blender to anyone looking for quality.,positive
+"this blender is amazing, best purchase I made this year.",positive
+"Superb build quality on this blender, very satisfied customer.",positive
+"this blender works flawlessly, customer service was great too.",positive
+"Five stars for this blender, could not be happier.",positive
+"this blender broke after just two days, very disappointed.",negative
+"Terrible quality, this blender stopped working almost immediately.",negative
+"I regret buying this blender, complete waste of money.",negative
+this blender arrived damaged and customer support was unhelpful.,negative
+"Would not recommend this blender, poor build quality.",negative
+"this blender does not work as advertised, very frustrating.",negative
+"Worst purchase ever, this blender is completely useless.",negative
+this blender was defective right out of the box.,negative
+"Very poor experience, this blender feels cheaply made.",negative
+"Disappointed with this blender, does not match the description.",negative
+"this blender is okay, nothing particularly special about it.",neutral
+"this blender works as expected, average quality for the price.",neutral
+"It's fine, this blender does the basic job it's meant for.",neutral
+"this blender arrived on time, quality is acceptable.",neutral
+"Not bad, not great, this blender is just an average product.",neutral
+"this blender meets basic requirements, nothing more.",neutral
+"Decent purchase, this blender works but nothing stands out.",neutral
+"this blender is standard, does what it says on the box.",neutral
+"Acceptable quality for this blender, no major complaints.",neutral
+"this blender is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love the mattress, works perfectly every time.",positive
+"the mattress exceeded my expectations, great quality overall.",positive
+"Very happy with the mattress, would definitely buy again.",positive
+the mattress arrived quickly and works exactly as described.,positive
+"Excellent value for money, the mattress is fantastic.",positive
+Highly recommend the mattress to anyone looking for quality.,positive
+"the mattress is amazing, best purchase I made this year.",positive
+"Superb build quality on the mattress, very satisfied customer.",positive
+"the mattress works flawlessly, customer service was great too.",positive
+"Five stars for the mattress, could not be happier.",positive
+"the mattress broke after just two days, very disappointed.",negative
+"Terrible quality, the mattress stopped working almost immediately.",negative
+"I regret buying the mattress, complete waste of money.",negative
+the mattress arrived damaged and customer support was unhelpful.,negative
+"Would not recommend the mattress, poor build quality.",negative
+"the mattress does not work as advertised, very frustrating.",negative
+"Worst purchase ever, the mattress is completely useless.",negative
+the mattress was defective right out of the box.,negative
+"Very poor experience, the mattress feels cheaply made.",negative
+"Disappointed with the mattress, does not match the description.",negative
+"the mattress is okay, nothing particularly special about it.",neutral
+"the mattress works as expected, average quality for the price.",neutral
+"It's fine, the mattress does the basic job it's meant for.",neutral
+"the mattress arrived on time, quality is acceptable.",neutral
+"Not bad, not great, the mattress is just an average product.",neutral
+"the mattress meets basic requirements, nothing more.",neutral
+"Decent purchase, the mattress works but nothing stands out.",neutral
+"the mattress is standard, does what it says on the box.",neutral
+"Acceptable quality for the mattress, no major complaints.",neutral
+"the mattress is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love this camera, works perfectly every time.",positive
+"this camera exceeded my expectations, great quality overall.",positive
+"Very happy with this camera, would definitely buy again.",positive
+this camera arrived quickly and works exactly as described.,positive
+"Excellent value for money, this camera is fantastic.",positive
+Highly recommend this camera to anyone looking for quality.,positive
+"this camera is amazing, best purchase I made this year.",positive
+"Superb build quality on this camera, very satisfied customer.",positive
+"this camera works flawlessly, customer service was great too.",positive
+"Five stars for this camera, could not be happier.",positive
+"this camera broke after just two days, very disappointed.",negative
+"Terrible quality, this camera stopped working almost immediately.",negative
+"I regret buying this camera, complete waste of money.",negative
+this camera arrived damaged and customer support was unhelpful.,negative
+"Would not recommend this camera, poor build quality.",negative
+"this camera does not work as advertised, very frustrating.",negative
+"Worst purchase ever, this camera is completely useless.",negative
+this camera was defective right out of the box.,negative
+"Very poor experience, this camera feels cheaply made.",negative
+"Disappointed with this camera, does not match the description.",negative
+"this camera is okay, nothing particularly special about it.",neutral
+"this camera works as expected, average quality for the price.",neutral
+"It's fine, this camera does the basic job it's meant for.",neutral
+"this camera arrived on time, quality is acceptable.",neutral
+"Not bad, not great, this camera is just an average product.",neutral
+"this camera meets basic requirements, nothing more.",neutral
+"Decent purchase, this camera works but nothing stands out.",neutral
+"this camera is standard, does what it says on the box.",neutral
+"Acceptable quality for this camera, no major complaints.",neutral
+"this camera is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love the sofa, works perfectly every time.",positive
+"the sofa exceeded my expectations, great quality overall.",positive
+"Very happy with the sofa, would definitely buy again.",positive
+the sofa arrived quickly and works exactly as described.,positive
+"Excellent value for money, the sofa is fantastic.",positive
+Highly recommend the sofa to anyone looking for quality.,positive
+"the sofa is amazing, best purchase I made this year.",positive
+"Superb build quality on the sofa, very satisfied customer.",positive
+"the sofa works flawlessly, customer service was great too.",positive
+"Five stars for the sofa, could not be happier.",positive
+"the sofa broke after just two days, very disappointed.",negative
+"Terrible quality, the sofa stopped working almost immediately.",negative
+"I regret buying the sofa, complete waste of money.",negative
+the sofa arrived damaged and customer support was unhelpful.,negative
+"Would not recommend the sofa, poor build quality.",negative
+"the sofa does not work as advertised, very frustrating.",negative
+"Worst purchase ever, the sofa is completely useless.",negative
+the sofa was defective right out of the box.,negative
+"Very poor experience, the sofa feels cheaply made.",negative
+"Disappointed with the sofa, does not match the description.",negative
+"the sofa is okay, nothing particularly special about it.",neutral
+"the sofa works as expected, average quality for the price.",neutral
+"It's fine, the sofa does the basic job it's meant for.",neutral
+"the sofa arrived on time, quality is acceptable.",neutral
+"Not bad, not great, the sofa is just an average product.",neutral
+"the sofa meets basic requirements, nothing more.",neutral
+"Decent purchase, the sofa works but nothing stands out.",neutral
+"the sofa is standard, does what it says on the box.",neutral
+"Acceptable quality for the sofa, no major complaints.",neutral
+"the sofa is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love this dress, works perfectly every time.",positive
+"this dress exceeded my expectations, great quality overall.",positive
+"Very happy with this dress, would definitely buy again.",positive
+this dress arrived quickly and works exactly as described.,positive
+"Excellent value for money, this dress is fantastic.",positive
+Highly recommend this dress to anyone looking for quality.,positive
+"this dress is amazing, best purchase I made this year.",positive
+"Superb build quality on this dress, very satisfied customer.",positive
+"this dress works flawlessly, customer service was great too.",positive
+"Five stars for this dress, could not be happier.",positive
+"this dress broke after just two days, very disappointed.",negative
+"Terrible quality, this dress stopped working almost immediately.",negative
+"I regret buying this dress, complete waste of money.",negative
+this dress arrived damaged and customer support was unhelpful.,negative
+"Would not recommend this dress, poor build quality.",negative
+"this dress does not work as advertised, very frustrating.",negative
+"Worst purchase ever, this dress is completely useless.",negative
+this dress was defective right out of the box.,negative
+"Very poor experience, this dress feels cheaply made.",negative
+"Disappointed with this dress, does not match the description.",negative
+"this dress is okay, nothing particularly special about it.",neutral
+"this dress works as expected, average quality for the price.",neutral
+"It's fine, this dress does the basic job it's meant for.",neutral
+"this dress arrived on time, quality is acceptable.",neutral
+"Not bad, not great, this dress is just an average product.",neutral
+"this dress meets basic requirements, nothing more.",neutral
+"Decent purchase, this dress works but nothing stands out.",neutral
+"this dress is standard, does what it says on the box.",neutral
+"Acceptable quality for this dress, no major complaints.",neutral
+"this dress is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love the toy, works perfectly every time.",positive
+"the toy exceeded my expectations, great quality overall.",positive
+"Very happy with the toy, would definitely buy again.",positive
+the toy arrived quickly and works exactly as described.,positive
+"Excellent value for money, the toy is fantastic.",positive
+Highly recommend the toy to anyone looking for quality.,positive
+"the toy is amazing, best purchase I made this year.",positive
+"Superb build quality on the toy, very satisfied customer.",positive
+"the toy works flawlessly, customer service was great too.",positive
+"Five stars for the toy, could not be happier.",positive
+"the toy broke after just two days, very disappointed.",negative
+"Terrible quality, the toy stopped working almost immediately.",negative
+"I regret buying the toy, complete waste of money.",negative
+the toy arrived damaged and customer support was unhelpful.,negative
+"Would not recommend the toy, poor build quality.",negative
+"the toy does not work as advertised, very frustrating.",negative
+"Worst purchase ever, the toy is completely useless.",negative
+the toy was defective right out of the box.,negative
+"Very poor experience, the toy feels cheaply made.",negative
+"Disappointed with the toy, does not match the description.",negative
+"the toy is okay, nothing particularly special about it.",neutral
+"the toy works as expected, average quality for the price.",neutral
+"It's fine, the toy does the basic job it's meant for.",neutral
+"the toy arrived on time, quality is acceptable.",neutral
+"Not bad, not great, the toy is just an average product.",neutral
+"the toy meets basic requirements, nothing more.",neutral
+"Decent purchase, the toy works but nothing stands out.",neutral
+"the toy is standard, does what it says on the box.",neutral
+"Acceptable quality for the toy, no major complaints.",neutral
+"the toy is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love the printer, works perfectly every time.",positive
+"the printer exceeded my expectations, great quality overall.",positive
+"Very happy with the printer, would definitely buy again.",positive
+the printer arrived quickly and works exactly as described.,positive
+"Excellent value for money, the printer is fantastic.",positive
+Highly recommend the printer to anyone looking for quality.,positive
+"the printer is amazing, best purchase I made this year.",positive
+"Superb build quality on the printer, very satisfied customer.",positive
+"the printer works flawlessly, customer service was great too.",positive
+"Five stars for the printer, could not be happier.",positive
+"the printer broke after just two days, very disappointed.",negative
+"Terrible quality, the printer stopped working almost immediately.",negative
+"I regret buying the printer, complete waste of money.",negative
+the printer arrived damaged and customer support was unhelpful.,negative
+"Would not recommend the printer, poor build quality.",negative
+"the printer does not work as advertised, very frustrating.",negative
+"Worst purchase ever, the printer is completely useless.",negative
+the printer was defective right out of the box.,negative
+"Very poor experience, the printer feels cheaply made.",negative
+"Disappointed with the printer, does not match the description.",negative
+"the printer is okay, nothing particularly special about it.",neutral
+"the printer works as expected, average quality for the price.",neutral
+"It's fine, the printer does the basic job it's meant for.",neutral
+"the printer arrived on time, quality is acceptable.",neutral
+"Not bad, not great, the printer is just an average product.",neutral
+"the printer meets basic requirements, nothing more.",neutral
+"Decent purchase, the printer works but nothing stands out.",neutral
+"the printer is standard, does what it says on the box.",neutral
+"Acceptable quality for the printer, no major complaints.",neutral
+"the printer is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love this router, works perfectly every time.",positive
+"this router exceeded my expectations, great quality overall.",positive
+"Very happy with this router, would definitely buy again.",positive
+this router arrived quickly and works exactly as described.,positive
+"Excellent value for money, this router is fantastic.",positive
+Highly recommend this router to anyone looking for quality.,positive
+"this router is amazing, best purchase I made this year.",positive
+"Superb build quality on this router, very satisfied customer.",positive
+"this router works flawlessly, customer service was great too.",positive
+"Five stars for this router, could not be happier.",positive
+"this router broke after just two days, very disappointed.",negative
+"Terrible quality, this router stopped working almost immediately.",negative
+"I regret buying this router, complete waste of money.",negative
+this router arrived damaged and customer support was unhelpful.,negative
+"Would not recommend this router, poor build quality.",negative
+"this router does not work as advertised, very frustrating.",negative
+"Worst purchase ever, this router is completely useless.",negative
+this router was defective right out of the box.,negative
+"Very poor experience, this router feels cheaply made.",negative
+"Disappointed with this router, does not match the description.",negative
+"this router is okay, nothing particularly special about it.",neutral
+"this router works as expected, average quality for the price.",neutral
+"It's fine, this router does the basic job it's meant for.",neutral
+"this router arrived on time, quality is acceptable.",neutral
+"Not bad, not great, this router is just an average product.",neutral
+"this router meets basic requirements, nothing more.",neutral
+"Decent purchase, this router works but nothing stands out.",neutral
+"this router is standard, does what it says on the box.",neutral
+"Acceptable quality for this router, no major complaints.",neutral
+"this router is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love the speaker, works perfectly every time.",positive
+"the speaker exceeded my expectations, great quality overall.",positive
+"Very happy with the speaker, would definitely buy again.",positive
+the speaker arrived quickly and works exactly as described.,positive
+"Excellent value for money, the speaker is fantastic.",positive
+Highly recommend the speaker to anyone looking for quality.,positive
+"the speaker is amazing, best purchase I made this year.",positive
+"Superb build quality on the speaker, very satisfied customer.",positive
+"the speaker works flawlessly, customer service was great too.",positive
+"Five stars for the speaker, could not be happier.",positive
+"the speaker broke after just two days, very disappointed.",negative
+"Terrible quality, the speaker stopped working almost immediately.",negative
+"I regret buying the speaker, complete waste of money.",negative
+the speaker arrived damaged and customer support was unhelpful.,negative
+"Would not recommend the speaker, poor build quality.",negative
+"the speaker does not work as advertised, very frustrating.",negative
+"Worst purchase ever, the speaker is completely useless.",negative
+the speaker was defective right out of the box.,negative
+"Very poor experience, the speaker feels cheaply made.",negative
+"Disappointed with the speaker, does not match the description.",negative
+"the speaker is okay, nothing particularly special about it.",neutral
+"the speaker works as expected, average quality for the price.",neutral
+"It's fine, the speaker does the basic job it's meant for.",neutral
+"the speaker arrived on time, quality is acceptable.",neutral
+"Not bad, not great, the speaker is just an average product.",neutral
+"the speaker meets basic requirements, nothing more.",neutral
+"Decent purchase, the speaker works but nothing stands out.",neutral
+"the speaker is standard, does what it says on the box.",neutral
+"Acceptable quality for the speaker, no major complaints.",neutral
+"the speaker is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love this vacuum cleaner, works perfectly every time.",positive
+"this vacuum cleaner exceeded my expectations, great quality overall.",positive
+"Very happy with this vacuum cleaner, would definitely buy again.",positive
+this vacuum cleaner arrived quickly and works exactly as described.,positive
+"Excellent value for money, this vacuum cleaner is fantastic.",positive
+Highly recommend this vacuum cleaner to anyone looking for quality.,positive
+"this vacuum cleaner is amazing, best purchase I made this year.",positive
+"Superb build quality on this vacuum cleaner, very satisfied customer.",positive
+"this vacuum cleaner works flawlessly, customer service was great too.",positive
+"Five stars for this vacuum cleaner, could not be happier.",positive
+"this vacuum cleaner broke after just two days, very disappointed.",negative
+"Terrible quality, this vacuum cleaner stopped working almost immediately.",negative
+"I regret buying this vacuum cleaner, complete waste of money.",negative
+this vacuum cleaner arrived damaged and customer support was unhelpful.,negative
+"Would not recommend this vacuum cleaner, poor build quality.",negative
+"this vacuum cleaner does not work as advertised, very frustrating.",negative
+"Worst purchase ever, this vacuum cleaner is completely useless.",negative
+this vacuum cleaner was defective right out of the box.,negative
+"Very poor experience, this vacuum cleaner feels cheaply made.",negative
+"Disappointed with this vacuum cleaner, does not match the description.",negative
+"this vacuum cleaner is okay, nothing particularly special about it.",neutral
+"this vacuum cleaner works as expected, average quality for the price.",neutral
+"It's fine, this vacuum cleaner does the basic job it's meant for.",neutral
+"this vacuum cleaner arrived on time, quality is acceptable.",neutral
+"Not bad, not great, this vacuum cleaner is just an average product.",neutral
+"this vacuum cleaner meets basic requirements, nothing more.",neutral
+"Decent purchase, this vacuum cleaner works but nothing stands out.",neutral
+"this vacuum cleaner is standard, does what it says on the box.",neutral
+"Acceptable quality for this vacuum cleaner, no major complaints.",neutral
+"this vacuum cleaner is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love the microwave, works perfectly every time.",positive
+"the microwave exceeded my expectations, great quality overall.",positive
+"Very happy with the microwave, would definitely buy again.",positive
+the microwave arrived quickly and works exactly as described.,positive
+"Excellent value for money, the microwave is fantastic.",positive
+Highly recommend the microwave to anyone looking for quality.,positive
+"the microwave is amazing, best purchase I made this year.",positive
+"Superb build quality on the microwave, very satisfied customer.",positive
+"the microwave works flawlessly, customer service was great too.",positive
+"Five stars for the microwave, could not be happier.",positive
+"the microwave broke after just two days, very disappointed.",negative
+"Terrible quality, the microwave stopped working almost immediately.",negative
+"I regret buying the microwave, complete waste of money.",negative
+the microwave arrived damaged and customer support was unhelpful.,negative
+"Would not recommend the microwave, poor build quality.",negative
+"the microwave does not work as advertised, very frustrating.",negative
+"Worst purchase ever, the microwave is completely useless.",negative
+the microwave was defective right out of the box.,negative
+"Very poor experience, the microwave feels cheaply made.",negative
+"Disappointed with the microwave, does not match the description.",negative
+"the microwave is okay, nothing particularly special about it.",neutral
+"the microwave works as expected, average quality for the price.",neutral
+"It's fine, the microwave does the basic job it's meant for.",neutral
+"the microwave arrived on time, quality is acceptable.",neutral
+"Not bad, not great, the microwave is just an average product.",neutral
+"the microwave meets basic requirements, nothing more.",neutral
+"Decent purchase, the microwave works but nothing stands out.",neutral
+"the microwave is standard, does what it says on the box.",neutral
+"Acceptable quality for the microwave, no major complaints.",neutral
+"the microwave is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love this chair, works perfectly every time.",positive
+"this chair exceeded my expectations, great quality overall.",positive
+"Very happy with this chair, would definitely buy again.",positive
+this chair arrived quickly and works exactly as described.,positive
+"Excellent value for money, this chair is fantastic.",positive
+Highly recommend this chair to anyone looking for quality.,positive
+"this chair is amazing, best purchase I made this year.",positive
+"Superb build quality on this chair, very satisfied customer.",positive
+"this chair works flawlessly, customer service was great too.",positive
+"Five stars for this chair, could not be happier.",positive
+"this chair broke after just two days, very disappointed.",negative
+"Terrible quality, this chair stopped working almost immediately.",negative
+"I regret buying this chair, complete waste of money.",negative
+this chair arrived damaged and customer support was unhelpful.,negative
+"Would not recommend this chair, poor build quality.",negative
+"this chair does not work as advertised, very frustrating.",negative
+"Worst purchase ever, this chair is completely useless.",negative
+this chair was defective right out of the box.,negative
+"Very poor experience, this chair feels cheaply made.",negative
+"Disappointed with this chair, does not match the description.",negative
+"this chair is okay, nothing particularly special about it.",neutral
+"this chair works as expected, average quality for the price.",neutral
+"It's fine, this chair does the basic job it's meant for.",neutral
+"this chair arrived on time, quality is acceptable.",neutral
+"Not bad, not great, this chair is just an average product.",neutral
+"this chair meets basic requirements, nothing more.",neutral
+"Decent purchase, this chair works but nothing stands out.",neutral
+"this chair is standard, does what it says on the box.",neutral
+"Acceptable quality for this chair, no major complaints.",neutral
+"this chair is fine for the price, would consider alternatives next time.",neutral
+"I absolutely love the tablet, works perfectly every time.",positive
+"the tablet exceeded my expectations, great quality overall.",positive
+"Very happy with the tablet, would definitely buy again.",positive
+the tablet arrived quickly and works exactly as described.,positive
+"Excellent value for money, the tablet is fantastic.",positive
+Highly recommend the tablet to anyone looking for quality.,positive
+"the tablet is amazing, best purchase I made this year.",positive
+"Superb build quality on the tablet, very satisfied customer.",positive
+"the tablet works flawlessly, customer service was great too.",positive
+"Five stars for the tablet, could not be happier.",positive
+"the tablet broke after just two days, very disappointed.",negative
+"Terrible quality, the tablet stopped working almost immediately.",negative
+"I regret buying the tablet, complete waste of money.",negative
+the tablet arrived damaged and customer support was unhelpful.,negative
+"Would not recommend the tablet, poor build quality.",negative
+"the tablet does not work as advertised, very frustrating.",negative
+"Worst purchase ever, the tablet is completely useless.",negative
+the tablet was defective right out of the box.,negative
+"Very poor experience, the tablet feels cheaply made.",negative
+"Disappointed with the tablet, does not match the description.",negative
+"the tablet is okay, nothing particularly special about it.",neutral
+"the tablet works as expected, average quality for the price.",neutral
+"It's fine, the tablet does the basic job it's meant for.",neutral
+"the tablet arrived on time, quality is acceptable.",neutral
+"Not bad, not great, the tablet is just an average product.",neutral
+"the tablet meets basic requirements, nothing more.",neutral
+"Decent purchase, the tablet works but nothing stands out.",neutral
+"the tablet is standard, does what it says on the box.",neutral
+"Acceptable quality for the tablet, no major complaints.",neutral
+"the tablet is fine for the price, would consider alternatives next time.",neutral
