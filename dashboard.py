@@ -81,7 +81,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-tab1, tab2, tab3, tab4 = st.tabs(["👤  Face Recognition", "💬  Sentiment Analysis", "🤖  Chatbot", "📊  Dashboard"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["👤  Face Recognition", "💬  Sentiment Analysis", "🤖  Chatbot", "📊  Dashboard", "📦  Product Classifier"])
 
 # ---------- Tab 1: Face Recognition ----------
 with tab1:
@@ -181,4 +181,25 @@ with tab4:
                     st.write(f"✓ {m}")
         else:
             st.error(resp.json())
+    st.markdown('</div>', unsafe_allow_html=True)
+
+# ---------- Tab 5: Product Classifier ----------
+with tab5:
+    st.markdown('<div class="card">', unsafe_allow_html=True)
+    st.markdown("#### Classify Product Image")
+    st.caption("Lightweight classifier (color + texture features) — categories: shoes, electronics, clothing")
+    prod_file = st.file_uploader("Upload product photo", type=["jpg", "jpeg", "png"], key="prod_img")
+    if st.button("Classify"):
+        if prod_file:
+            files = {"file": (prod_file.name, prod_file.getvalue())}
+            resp = requests.post(f"{API_URL}/classify-product", files=files, headers=HEADERS)
+            if resp.status_code == 200:
+                result = resp.json()
+                c1, c2 = st.columns(2)
+                c1.metric("Category", result["category"].capitalize())
+                c2.metric("Confidence", f"{result['confidence']*100:.1f}%")
+            else:
+                st.error(resp.json())
+        else:
+            st.warning("Please upload a product photo.")
     st.markdown('</div>', unsafe_allow_html=True)

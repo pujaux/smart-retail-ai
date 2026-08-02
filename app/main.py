@@ -9,6 +9,7 @@ import shutil, os as _os
 from app.services.face_recognition_module import recognize, enroll_customer
 from app.services.sentiment_module import predict as predict_sentiment
 from app.services.chatbot_module import Chatbot
+from app.services.product_classifier import predict as predict_product
 
 app = FastAPI(title="Smart Retail AI Platform", version="1.0")
 
@@ -37,7 +38,7 @@ def root():
 @app.post("/recognize-face")
 async def recognize_face(file: UploadFile = File(...), x_api_key: str = Header(None)):
     check_key(x_api_key)
-    temp_path = f"data/_upload_{file.filename}"
+    temp_path = f"data/_{safe_filename(file.filename)}"
     with open(temp_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
     result = recognize(temp_path)
@@ -47,7 +48,7 @@ async def recognize_face(file: UploadFile = File(...), x_api_key: str = Header(N
 @app.post("/enroll-customer")
 async def enroll(name: str, file: UploadFile = File(...), x_api_key: str = Header(None)):
     check_key(x_api_key)
-    temp_path = f"data/_upload_{file.filename}"
+    temp_path = f"data/_{safe_filename(file.filename)}"
     with open(temp_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
     success = enroll_customer(name, temp_path)
@@ -65,6 +66,26 @@ def analyze_sentiment(req: SentimentRequest, x_api_key: str = Header(None)):
 def chatbot_reply(req: ChatRequest, x_api_key: str = Header(None)):
     check_key(x_api_key)
     return bot.get_response(req.message)
+
+import re
+
+def safe_filename(name):
+    ext = os.path.splitext(name)[1] or ".jpg"
+    return f"upload_{abs(hash(name))}{ext}"
+
+@app.post("/classify-product")
+async def classify_product(file: UploadFile = File(...), x_api_key: str = Header(None)):
+    check_key(x_api_key)
+    temp_path = f"data/_{safe_filename(file.filename)}"
+    with open(temp_path, "wb") as buffer:
+        shutil.copyfileobj(file.file, buffer)
+    try:
+        result = predict_product(temp_path)
+    except Exception as e:
+        _os.remove(temp_path)
+        raise HTTPException(status_code=400, detail=str(e))
+    _os.remove(temp_path)
+    return result
 
 @app.get("/dashboard/stats")
 def dashboard_stats(x_api_key: str = Header(None)):
