@@ -7,6 +7,28 @@ from sklearn.model_selection import train_test_split
 MODEL_PATH = "app/models/sentiment_model.pkl"
 VEC_PATH = "app/models/sentiment_vectorizer.pkl"
 
+# ---------- DistilBERT (optional upgrade) ----------
+_distilbert_pipeline = None
+
+def _get_distilbert():
+    global _distilbert_pipeline
+    if _distilbert_pipeline is None:
+        from transformers import pipeline
+        _distilbert_pipeline = pipeline(
+            "sentiment-analysis",
+            model="distilbert-base-uncased-finetuned-sst-2-english"
+        )
+    return _distilbert_pipeline
+
+def predict_distilbert(text):
+    """Uses a pretrained DistilBERT model fine-tuned for sentiment (binary: POSITIVE/NEGATIVE).
+    Downloads the model on first use (~268MB) and caches it locally afterward."""
+    clf = _get_distilbert()
+    result = clf(text)[0]
+    label = "positive" if result["label"] == "POSITIVE" else "negative"
+    return {"text": text, "sentiment": label, "confidence": round(float(result["score"]), 3), "model": "distilbert"}
+# ---------------------------------------------------
+
 def train(csv_path="data/reviews.csv", text_col="review", label_col="sentiment"):
     df = pd.read_csv(csv_path)
     df = df.dropna(subset=[text_col, label_col])
@@ -46,3 +68,7 @@ if __name__ == "__main__":
     train()
     print(predict("This product is amazing, I love it!"))
     print(predict("Terrible quality, very disappointed."))
+
+    # Uncomment to test DistilBERT (downloads ~268MB on first run):
+    # print(predict_distilbert("This product is amazing, I love it!"))
+    # print(predict_distilbert("Terrible quality, very disappointed."))

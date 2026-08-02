@@ -7,7 +7,7 @@ from typing import Optional
 import shutil, os as _os
 
 from app.services.face_recognition_module import recognize, enroll_customer
-from app.services.sentiment_module import predict as predict_sentiment
+from app.services.sentiment_module import predict as predict_sentiment, predict_distilbert
 from app.services.chatbot_module import Chatbot
 from app.services.product_classifier import predict as predict_product
 
@@ -22,6 +22,7 @@ def check_key(x_api_key: Optional[str] = Header(None)):
 
 class SentimentRequest(BaseModel):
     text: str
+    use_distilbert: bool = False
 
 class ChatRequest(BaseModel):
     message: str
@@ -60,6 +61,11 @@ async def enroll(name: str, file: UploadFile = File(...), x_api_key: str = Heade
 @app.post("/analyze-sentiment")
 def analyze_sentiment(req: SentimentRequest, x_api_key: str = Header(None)):
     check_key(x_api_key)
+    if req.use_distilbert:
+        try:
+            return predict_distilbert(req.text)
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"DistilBERT unavailable: {e}")
     return predict_sentiment(req.text)
 
 @app.post("/chatbot")
