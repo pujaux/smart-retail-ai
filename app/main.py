@@ -6,19 +6,19 @@ from pydantic import BaseModel
 from typing import Optional
 import shutil, os as _os
 
-from app.services.face_recognition_module import recognize, enroll_customer
-from app.services.sentiment_module import predict as predict_sentiment, predict_distilbert
-from app.services.chatbot_module import Chatbot
-from app.services.product_classifier import predict as predict_product
+from app.pipeline import pipeline
 
 app = FastAPI(title="Smart Retail AI Platform", version="1.0")
 
-bot = Chatbot()
-API_KEY = "retail-secret-key"  # simple demo key
+API_KEY = os.environ.get("RETAIL_API_KEY", "retail-secret-key")
 
 def check_key(x_api_key: Optional[str] = Header(None)):
     if x_api_key != API_KEY:
         raise HTTPException(status_code=401, detail="Invalid or missing API key")
+
+def safe_filename(name):
+    ext = os.path.splitext(name)[1] or ".jpg"
+    return f"upload_{abs(hash(name))}{ext}"
 
 class SentimentRequest(BaseModel):
     text: str
@@ -26,9 +26,6 @@ class SentimentRequest(BaseModel):
 
 class ChatRequest(BaseModel):
     message: str
-
-class EnrollRequest(BaseModel):
-    name: str
 
 # ---------- Endpoints ----------
 
@@ -42,7 +39,7 @@ async def recognize_face(file: UploadFile = File(...), x_api_key: str = Header(N
     temp_path = f"data/_{safe_filename(file.filename)}"
     with open(temp_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
-    result = recognize(temp_path)
+    result = pipeline.recognize_face(temp_path)
     _os.remove(temp_path)
     return result
 
@@ -52,7 +49,7 @@ async def enroll(name: str, file: UploadFile = File(...), x_api_key: str = Heade
     temp_path = f"data/_{safe_filename(file.filename)}"
     with open(temp_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
-    success = enroll_customer(name, temp_path)
+    success = pipeline.enroll_customer(name, temp_path)
     _os.remove(temp_path)
     if not success:
         raise HTTPException(status_code=400, detail="No face detected in image")
@@ -61,23 +58,15 @@ async def enroll(name: str, file: UploadFile = File(...), x_api_key: str = Heade
 @app.post("/analyze-sentiment")
 def analyze_sentiment(req: SentimentRequest, x_api_key: str = Header(None)):
     check_key(x_api_key)
-    if req.use_distilbert:
-        try:
-            return predict_distilbert(req.text)
-        except Exception as e:
-            raise HTTPException(status_code=500, detail=f"DistilBERT unavailable: {e}")
-    return predict_sentiment(req.text)
+    try:
+        return pipeline.analyze_sentiment(req.text, use_distilbert=req.use_distilbert)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/chatbot")
 def chatbot_reply(req: ChatRequest, x_api_key: str = Header(None)):
     check_key(x_api_key)
-    return bot.get_response(req.message)
-
-import re
-
-def safe_filename(name):
-    ext = os.path.splitext(name)[1] or ".jpg"
-    return f"upload_{abs(hash(name))}{ext}"
+    return pipeline.chat(req.message)
 
 @app.post("/classify-product")
 async def classify_product(file: UploadFile = File(...), x_api_key: str = Header(None)):
@@ -86,7 +75,7 @@ async def classify_product(file: UploadFile = File(...), x_api_key: str = Header
     with open(temp_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
     try:
-        result = predict_product(temp_path)
+        result = pipeline.classify_product(temp_path)
     except Exception as e:
         _os.remove(temp_path)
         raise HTTPException(status_code=400, detail=str(e))
@@ -100,5 +89,5 @@ def dashboard_stats(x_api_key: str = Header(None)):
     n_customers = len(os.listdir(faces_dir)) if os.path.exists(faces_dir) else 0
     return {
         "enrolled_customers": n_customers,
-        "modules_active": ["face_recognition", "sentiment_analysis", "chatbot"]
+        "modules_active": ["face_recognition", "sentiment_analysis", "chatbot", "product_classifier"]
     }

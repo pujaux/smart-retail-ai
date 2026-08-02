@@ -29,7 +29,17 @@ CV Module              NLP Module      Chatbot Module
 | Face Recognition | `app/services/face_recognition_module.py` | OpenCV LBPH recognizer — enroll and identify returning customers |
 | Sentiment Analysis | `app/services/sentiment_module.py` | TF-IDF + Logistic Regression, classifies reviews as positive/negative/neutral |
 | Chatbot | `app/services/chatbot_module.py` | TF-IDF + cosine similarity intent matching over a custom `intents.json` |
+| Product Classifier | `app/services/product_classifier.py` | Color histogram + gradient-texture features → RandomForest, classifies product photos (shoes/electronics/clothing) |
 | API Gateway | `app/main.py` | FastAPI app exposing all modules with API-key authentication |
+| Frontend | `dashboard.py` | Streamlit dashboard with a tab per module, calling the FastAPI backend |
+
+## Testing
+
+Automated tests cover sentiment, chatbot, and product classification logic:
+```bash
+pip install pytest
+python -m pytest tests/ -v
+```
 
 ## Setup
 
@@ -54,6 +64,7 @@ docker run -p 8000:8000 smart-retail-ai
 - **Face recognition**: self-collected sample images (consenting participants), used to demonstrate enrollment and recognition. Not a production-scale dataset.
 - **Sentiment analysis**: a template-generated retail review dataset (600 rows, 3 sentiment classes, 20 product categories), simulating real customer reviews for demo purposes.
 - **Chatbot**: custom `intents.json` covering common retail FAQs (greetings, order status, returns, payments, discounts).
+- **Product classification**: ~244 real product photos across 3 categories (shoes, electronics, clothing), sourced from a personal collection and public product images for demo purposes. Achieves ~70% test accuracy with a lightweight classical-CV model (color + texture features + RandomForest) — no deep learning weights required, so the module has no external download dependency.
 
 ## Ethics Note — Face Recognition
 
@@ -66,12 +77,15 @@ Facial recognition in a retail context raises real privacy and fairness concerns
 
 ## Scope & Limitations (compressed 4-day build)
 
-This project was intentionally scoped down from the full 9-day plan to fit a 4-day timeline. Cut for time:
-- Product image classification module (`/classify-product` endpoint, MobileNetV2 classifier) — not implemented
-- DistilBERT sentiment upgrade — used TF-IDF + Logistic Regression baseline only
-- CI/CD pipeline, automated tests, WebSocket live video — not implemented
+This project was intentionally scoped down from the full 9-day plan to fit a 4-day timeline. What was originally cut for time was later completed once the timeline allowed:
 
-These are documented here rather than left silently missing, and would be natural next steps for a full production build.
+- **DistilBERT sentiment** — `predict_distilbert()` in `sentiment_module.py`, using `distilbert-base-uncased-finetuned-sst-2-english` via Hugging Face Transformers. Available via `/analyze-sentiment` with `"use_distilbert": true`. TF-IDF + Logistic Regression remains the default (faster, no model download needed) with DistilBERT as an opt-in upgrade.
+- **Product image classifier** — built with a lightweight classical-CV approach (color + texture features + RandomForest) rather than MobileNetV2, trained on ~244 real product photos, ~70% test accuracy. No external model download required.
+- **Automated test suite** (`tests/test_modules.py`) covering sentiment, chatbot, and product classification.
+- **Docker** — build and run verified end-to-end; all endpoints confirmed live inside the container.
+- **Full Streamlit frontend dashboard** unifying all modules with custom styling.
+
+Remaining out of scope: CI/CD pipeline, WebSocket live video streaming — not implemented, natural next steps for a full production build.
 
 ## Tech Stack
 
